@@ -19,3 +19,13 @@ function furnitureCost(chairQuantity , tableQuantity, bedQuantity) {
 }
 const totalFurniturewood = furnitureCost(1,2,2);
 console.log(totalFurniturewood);
+
+
+*******************************************************************************
+
+/**
+ * Shirt price --> 500
+ * pant price --> 300
+ * shoe price --> 900
+ * 
+*/

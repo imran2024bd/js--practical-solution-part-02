@@ -15,4 +15,23 @@ function getMax(numbers) {
     
 }
 const max = getMax(heights);
-console.log('max number is :' , max);
+// console.log('max number is :' , max);
+
+
+// homework: min number
+
+function getMin(numbers) {
+    // console.log(numbers);
+    let min = numbers[0];
+    for ( const item of numbers){
+        // console.log(item);
+        if (item < min) {
+               min = item;        
+        }
+        
+    }
+    return min
+    
+}
+const min = getMin(heights);
+console.log(min);

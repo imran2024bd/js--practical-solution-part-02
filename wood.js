@@ -18,10 +18,10 @@ function furnitureCost(chairQuantity , tableQuantity, bedQuantity) {
     
 }
 const totalFurniturewood = furnitureCost(1,2,2);
-console.log(totalFurniturewood);
+// console.log(totalFurniturewood);
 
 
-*******************************************************************************
+// *******************************************************************************
 
 /**
  * Shirt price --> 500
@@ -29,3 +29,18 @@ console.log(totalFurniturewood);
  * shoe price --> 900
  * 
 */
+
+
+function dressCost(shirtQuantity, pantQuantity , shoeQuantity) {
+    const shirtPrice = 500;
+    const pantPrice = 300;
+    const shoePrice = 900
+    const totalShirtprice = shirtPrice * shirtQuantity;
+    const totalPantprice = pantPrice * pantQuantity;
+    const totalShoeprice = shoePrice * shoeQuantity;
+    const totalCost = totalShirtprice + totalPantprice + totalShoeprice;
+    return totalCost;
+}
+
+const total = dressCost ( 2, 1, 3);
+console.log(total);

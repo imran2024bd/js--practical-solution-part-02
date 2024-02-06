@@ -72,18 +72,110 @@
 
 // step # 3 complete validation for  a string
 
-function fullName(first , last) {
-    // console.log(typeof(first));
-    if ( typeof first !== 'string' || typeof last !== 'string')       
-    {
-        return ' name should be a string';
+// function fullName(first , last) {
+//     // console.log(typeof(first));
+//     if ( typeof first !== 'string' || typeof last !== 'string')       
+//     {
+//         return ' name should be a string';
+//     }
+//     const full = first + ' ' + last;
+//     return full;
+// }
+
+// const name2 = fullName( 'imran' , 'hossain');
+// // const name2 = fullName( 5 , 'hossain');
+// // const name2 = fullName( 'imran' , 2);
+// // const name2 = fullName( 7 , 2);
+// console.log(name2);
+
+
+// ***************************************************************************************
+
+// Validation of arguments when we put object
+
+const materials = { name: 'chulkani dandi', price: 35, color: 'blue'}
+function getPrice(product) {
+    // console.log(typeof (product));
+    if ( typeof product !== 'object'){
+        return 'Please provide an object';
     }
-    const full = first + ' ' + last;
+    const price = product.price;
+    return price;
+    
+}
+const price = getPrice(materials);
+// console.log(price);
+
+
+// Validation of arguments when we put Array
+
+
+function getsecond(numbers) {
+    // console.log(typeof (numbers));
+    // if ( typeof numbers !== 'object'){
+    //     return ' please provide an array'
+    // }
+    if(Array.isArray !== false){
+        return ' please provide an array'
+    }
+    const second = numbers[1];
+    return second;
+}
+const second = getsecond(45 , 20);
+// const second = getsecond(45 , 20);
+// const second = getsecond([45 , 60 , 22 , 2, 3]);
+console.log(second);
+
+
+// https://github.com/ProgrammingHero1/js-problems-part2/blob/main/validation.js
+
+// programming hero Coding
+
+
+function multiply(num1, num2) {
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+        return 'Please provide a number'
+    }
+    const mult = num1 * num2;
+    return mult;
+}
+
+const result = multiply(5, 'seven');
+// console.log(result);
+
+function fullName(first, second) {
+    if (typeof first !== 'string') {
+        return 'First name should be a string';
+    }
+    else if (typeof second !== 'string') {
+        return 'Second Name should be a string';
+    }
+    const full = first + ' ' + second;
     return full;
 }
 
-const name2 = fullName( 'imran' , 'hossain');
-// const name2 = fullName( 5 , 'hossain');
-// const name2 = fullName( 'imran' , 2);
-// const name2 = fullName( 7 , 2);
-console.log(name2);
+const full = fullName('Akmal')
+// console.log(full);
+
+function getPrice(product) {
+    if (typeof product !== 'object') {
+        return 'Please provide an object'
+    }
+    const price = product.price;
+    return price;
+}
+
+// const price = getPrice({ name: 'chulkani dandi', price: 35, color: 'blue' })
+const price = getPrice(5)
+// console.log(price)
+
+function getSecond(numbers) {
+    if(Array.isArray(numbers) === false){
+        return 'Please provide an array'
+    }
+    const second = numbers[1];
+    return second;
+}
+
+const second = getSecond([45, 61, 2])
+console.log(second)

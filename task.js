@@ -18,18 +18,25 @@
 
 // Task -2:
 // Find the friend with the smallest name.
-// const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
 
-// function smallestName(nameList)  {
-//     for ( const name1 of nameList){
-//         // console.log(name1);
-//         // const length = name1.length(heights2[0]);
-//         const length = nameList[0].legth();
-//         return length;
-//     }
+const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+
+function smallestName(nameList)  {
+    for ( const name1 of nameList){
+        // console.log(name1);
+        // const length = name1.length(heights2[0]);
+        let length = [];
+        for (let i = 0; i < nameList.length; i++) {
+            // console.log(i);
+            const length = nameList[i].length;
+           const lResult= length.push();
+            
+        }
+        return lResult;
+    }
     
-// }
-// console.log(smallestName(heights2));
+}
+console.log(smallestName(heights2));
 
 
 // Task-3:
@@ -58,32 +65,32 @@
 // Input
 
 
-    const phones = [
-        { model: "PhoneA", brand: "Iphone", price: 95000 },
-        { model: "PhoneB", brand: "Samsung", price: 40000 },
-        { model: "PhoneC", brand: "Oppo", price: 26000 },
-        { model: "PhoneD", brand: "Nokia", price: 35000 },
-        { model: "PhoneE", brand: "Iphone", price: 105000 },
-        { model: "PhoneF", brand: "HTC", price: 48000 },
-    ];
-function findAveragePhonePrice(price) {
-    // console.log(price);
-    for ( const phone of phones){
-        // console.log(phone);
-        const length = phones.length;
-        // return length;
-        const phoneAprice = phones[0].price ;
-        const phoneBprice = phones[1].price ;
-        const phoneCprice = phones[2].price ;
-        const phoneDprice = phones[3].price ;
-        const phoneEprice = phones[4].price ;
-        const phoneFprice = phones[5].price ;
-        const totalPhoneprice = phoneAprice + phoneBprice + phoneCprice + phoneDprice+ phoneEprice +phoneFprice;
-        const findAveragePhonePrice = totalPhoneprice / length;              
-        return findAveragePhonePrice;
-    }
-}
-console.log(findAveragePhonePrice(phones));
+//     const phones = [
+//         { model: "PhoneA", brand: "Iphone", price: 95000 },
+//         { model: "PhoneB", brand: "Samsung", price: 40000 },
+//         { model: "PhoneC", brand: "Oppo", price: 26000 },
+//         { model: "PhoneD", brand: "Nokia", price: 35000 },
+//         { model: "PhoneE", brand: "Iphone", price: 105000 },
+//         { model: "PhoneF", brand: "HTC", price: 48000 },
+//     ];
+// function findAveragePhonePrice(price) {
+//     // console.log(price);
+//     for ( const phone of phones){
+//         // console.log(phone);
+//         const length = phones.length;
+//         // return length;
+//         const phoneAprice = phones[0].price ;
+//         const phoneBprice = phones[1].price ;
+//         const phoneCprice = phones[2].price ;
+//         const phoneDprice = phones[3].price ;
+//         const phoneEprice = phones[4].price ;
+//         const phoneFprice = phones[5].price ;
+//         const totalPhoneprice = phoneAprice + phoneBprice + phoneCprice + phoneDprice+ phoneEprice +phoneFprice;
+//         const findAveragePhonePrice = totalPhoneprice / length;              
+//         return findAveragePhonePrice;
+//     }
+// }
+// console.log(findAveragePhonePrice(phones));
 
 // // console.log(findAveragePhonePrice(phones));
 // console.log(phones.length());

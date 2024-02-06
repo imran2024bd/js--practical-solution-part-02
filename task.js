@@ -21,22 +21,43 @@
 
 const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
 
-function smallestName(nameList)  {
-    for ( const name1 of nameList){
-        // console.log(name1);
-        // const length = name1.length(heights2[0]);
-        let length = [];
-        for (let i = 0; i < nameList.length; i++) {
-            // console.log(i);
-            const length = nameList[i].length;
-           const lResult= length.push();
-            
-        }
-        return lResult;
+let number = [];
+for (let i = 0; i < heights2.length; i++) {
+    const length = heights2[i].length;
+    number.push(length);
+    // console.log(length);
     }
+    const min = number[0];
+    for ( const num of number){
+        // console.log(num);
+        if (num < min) {
+            min = num;                   
+        }
+    }
+    console.log(min);
+// console.log(number);
+
+// const sortedHeight = heights2.sort();
+// console.log(sortedHeight);
+
+
+
+// function smallestName(nameList)  {
+//     for ( const name1 of nameList){
+//         // console.log(name1);
+//         // const length = name1.length(heights2[0]);
+//         let length = [];
+//         for (let i = 0; i < nameList.length; i++) {
+//             // console.log(i);
+//             const length = nameList[i].length;
+//            const lResult= length.push();
+            
+//         }
+//         return lResult;
+//     }
     
-}
-console.log(smallestName(heights2));
+// }
+// console.log(smallestName(heights2));
 
 
 // Task-3:
@@ -104,4 +125,25 @@ console.log(smallestName(heights2));
 //             { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
 //             { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
 //         ];
+
+    // function salaryCalculation(values) {
+    //     // console.log(values);
+    //     for ( const value of values){
+    //         // console.log(value);
+    //         const shahinSalary = (values[0].starting) + ((values[0].experience)*(values[0].increment));
+    //         const shihabSalary = (values[1].starting) + ((values[1].experience)*(values[1].increment));
+    //         const shikotSalary = (values[2].starting) + ((values[2].experience)*(values[2].increment));
+    //         const shohelSalary = (values[3].starting) + ((values[3].experience)*(values[3].increment));
+    //         const employeSalary = shahinSalary + shihabSalary + shikotSalary + shohelSalary;
+    //         return employeSalary;
+    //     }
+        
+    // }
+
+    // // console.log(salaryCalculation(employees));
+    // const employeSalary = salaryCalculation(employees);
+    // console.log(employeSalary);
+
+
+
 

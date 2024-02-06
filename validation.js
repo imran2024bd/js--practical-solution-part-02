@@ -41,19 +41,49 @@
 
 // step # 3 complete validation for num1 & num2 in positive number & positive intiger
 
-function multiply(num1 , num2) {
-            if ( typeof num1 !== 'number' || typeof num2 !== 'number')
-            {
-        return ' please provide a valid positive number'
+// function multiply(num1 , num2) {
+//             if ( typeof num1 !== 'number' || typeof num2 !== 'number')
+//             {
+//         return ' please provide a valid positive number'
+//     }
+//     else if( num1 < 0 || num2 < 0){
+//     return ' please provide a  positive intiger number'
+//     }
+//     const mult = num1 * num2;
+//     return mult;
+// }
+// // const mult = multiply( -5 , -27);
+// // const mult = multiply( -5 , 27);
+// // const mult = multiply( 5 , -27);
+// const mult = multiply( 5 , 27);
+// console.log(mult);
+
+
+// Validation of arguments when we put  string
+
+// normal function when we put a string
+
+// function fullName(first , last) {
+//     const full = first + ' ' + last;
+//     return full;
+// }
+// console.log(fullName( 'Imran' , 'Hossain'));
+
+
+// step # 3 complete validation for  a string
+
+function fullName(first , last) {
+    // console.log(typeof(first));
+    if ( typeof first !== 'string' || typeof last !== 'string')       
+    {
+        return ' name should be a string';
     }
-    else if( num1 < 0 || num2 < 0){
-    return ' please provide a  positive intiger number'
-    }
-    const mult = num1 * num2;
-    return mult;
+    const full = first + ' ' + last;
+    return full;
 }
-// const mult = multiply( -5 , -27);
-// const mult = multiply( -5 , 27);
-// const mult = multiply( 5 , -27);
-const mult = multiply( 5 , 27);
-console.log(mult);
+
+const name2 = fullName( 'imran' , 'hossain');
+// const name2 = fullName( 5 , 'hossain');
+// const name2 = fullName( 'imran' , 2);
+// const name2 = fullName( 7 , 2);
+console.log(name2);

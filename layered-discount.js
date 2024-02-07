@@ -70,3 +70,40 @@ function layeredDiscountedTotal (quantity){
     }
 }
 
+
+// practise part 
+
+/**
+ * first100 --> 100
+ * 101To200 --> 90
+ * above200 --> 70
+*/
+
+function layeredDiscountedTotal(quantity) {
+    const first100Price = 100;
+    const second101To200 = 90;
+    const above200Price = 70;
+    if (quantity <= 100) {
+        const totalfirst100Price = first100Price * quantity;
+        return totalfirst100Price;
+    }
+    else if (quantity <= 200) {
+        const total100Price = 100 * first100Price;
+        const remainingQuantity = quantity - 100;
+        const remainingQuantityprice =  remainingQuantity *second101To200;
+        const totalsecond101To200price = total100Price + remainingQuantityprice;
+        return totalsecond101To200price;
+
+    }
+    else if (quantity > 200) {
+        const total100Price = 100 * first100Price;
+        const total101To200price = 100 * second101To200;
+        const remainingQuantity = quantity - 200;
+        const remainingQuantityprice =  remainingQuantity * above200Price;
+        const totalaboveTo200price = total100Price + total101To200price+ remainingQuantityprice;
+        return totalaboveTo200price;
+
+    }
+
+}
+console.log(layeredDiscountedTotal(201));
